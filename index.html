@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybox NFT Collections HTML Template</title>
+    <link rel="stylesheet" href="app/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="app/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="app/dist/app.css">
+    <link rel="stylesheet" href="assets/font/font-awesome.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
+</head>
+
+<body class="header-fixed main">
+    <!-- preloade -->
+    <div class="preload preload-container">
+        <div class="preload-logo"></div>
+    </div>
+    <!-- /preload -->
+    <div id="wrapper">
+        <!-- Header -->
+        <header id="header_main" class="header">
+            <div class="container">
+                <div id="site-header-inner">
+
+                    <nav id="main-nav" class="main-nav">
+
+                        <!--
+ <li class="menu-item">
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">About</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="about.html">About 1</a></li>
+                                <li class="menu-item"><a href="about2.html">About 2</a></li>
+                                <li class="menu-item"><a href="coming-soon.html">Coming Soon</a></li>
+                                <li class="menu-item"><a href="community.html">Community</a></li>
+                                <li class="menu-item"><a href="faq.html">Faq</a></li>
+                                <li class="menu-item"><a href="404.html">404</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Road Map </a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="roadmap.html">Road Map 1</a></li>
+                                <li class="menu-item"><a href="roadmap2.html">Road Map 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">NFT</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="item.html">NFT Item</a></li>
+                                <li class="menu-item"><a href="item-details.html">NFT Item Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#">Blog</a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
+                                <li class="menu-item"><a href="blog-details.html">Blog Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="contact.html">Contact</a>
+                        </li>
+                   -->
+                        </ul>
+                    </nav><!-- /#main-nav -->
+                    <a class=" btn-effect" href="contact.html">
+                        <div class="header__logo">
+                            <a href="index.html"><img width="200px" src="assets/images/logo/logo.png" alt=""></a>
+                        </div>
+                    </a>
+                    <ul id="menu-primary-menu" class="menu tf-button oculta-mob">
+                        <ul class="widget-social">
+                            <li>
+                                <a href="#">
+                                    <img width="30px" src="assets/images/instagram-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.80176 15.0759C1.80315 21.0155 6.09584 26.0728 11.9262 27.0037V18.5652H8.88176V15.0759H11.9298V12.4196C11.7935 11.161 12.2208 9.90656 13.0957 8.9966C13.9707 8.08664 15.2026 7.61545 16.4574 7.71081C17.358 7.72545 18.2564 7.80616 19.1454 7.95229V10.9213H17.6286C17.1064 10.8524 16.5814 11.026 16.2015 11.3929C15.8216 11.7599 15.6279 12.2806 15.675 12.8084V15.0759H19.0002L18.4686 18.5664H15.675V27.0037C21.9803 26.001 26.4019 20.207 25.7364 13.8191C25.0709 7.43115 19.5513 2.68558 13.1763 3.02033C6.80139 3.35508 1.80277 8.65295 1.80176 15.0759Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img width="50px" src="assets/images/whatsapp-svgrepo-com.svg" alt="">
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M25.971 0.799805H4.02818C2.13767 0.799805 0.599609 2.33786 0.599609 4.22838V26.1712C0.599609 28.0617 2.13767 29.5998 4.02818 29.5998H25.971C27.8616 29.5998 29.3996 28.0617 29.3996 26.1712V4.22838C29.3996 2.33786 27.8616 0.799805 25.971 0.799805ZM23.2323 13.3641C23.0766 13.3785 22.9189 13.3881 22.7592 13.3881C20.9605 13.3881 19.38 12.4631 18.4604 11.0649C18.4604 14.7328 18.4604 18.9061 18.4604 18.976C18.4604 22.2051 15.8424 24.8231 12.6133 24.8231C9.38429 24.8231 6.76624 22.2051 6.76624 18.976C6.76624 15.747 9.38429 13.1289 12.6133 13.1289C12.7354 13.1289 12.8547 13.1399 12.9747 13.1475V16.0288C12.8547 16.0144 12.7368 15.9925 12.6133 15.9925C10.9649 15.9925 9.62909 17.3283 9.62909 18.9767C9.62909 20.6252 10.9649 21.9609 12.6133 21.9609C14.2618 21.9609 15.7176 20.6622 15.7176 19.0137C15.7176 18.9486 15.7464 5.57786 15.7464 5.57786H18.5002C18.7594 8.04026 20.7473 9.98358 23.2323 10.1619V13.3641Z"
+                                            fill="white" />
+                                    </svg>
+                                </a>
+                            </li>
+
+                        </ul>
+
+                </div>
+            </div>
+        </header>
+        <!-- end Header -->
+
+        <section class="page-title">
+            <div class="swiper-container slider-main">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slider-st1">
+                            <div class="overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="box-slider">
+                                            <div class="content-box">
+                                                <h1 class="title" style="font-size: 48px !important;">Aumente seu
+                                                    impacto digital e impulsione seus resultados conosco</h1>
+                                                <p class="sub-title">a agência de marketing que transforma conteúdo em
+                                                    conversões!</p>
+                                                <div class="wrap-btn">
+                                                    <a href="#" class="tf-button-st2 btn-effect" data-toggle="modal"
+                                                        data-target="#popup_bid"><span class="effect">Aumente sua venda
+                                                            já!</span></a>
+                                                </div>
+                                            </div>
+                                            <div class="image">
+                                                <img src="assets/images/common/itemslider.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-st2">
+                            <div class="overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="box-slider">
+                                            <div class="content-box">
+                                                <h1 class="title">CYbox nft collectionS for everyone</h1>
+                                                <p class="sub-title">Nulla ornare sagittis placerat nunc sit tempus
+                                                    enim.
+                                                    Accumsan pellentesque ipsum felis tristique at proin vel turpis.</p>
+                                                <div class="wrap-btn style2">
+                                                    <a href="#" class="tf-button-st2 btn-effect" data-toggle="modal"
+                                                        data-target="#popup_bid"><span class="effect">connect
+                                                            wallet</span></a>
+                                                    <a href="https://www.youtube.com/watch?v=i7EMACWuErA"
+                                                        class="tf-button btn-effect popup-youtube">
+                                                        <span class="boder-fade"></span>
+                                                        <span class="effect">watch video</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider-st3">
+                            <div class="overlay"></div>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="box-slider">
+                                            <div class="content-box">
+                                                <h2 class="title">Criamos soluções inteligentes para</h2>
+                                                <p class="sub-title">Você vender mais com marketing digital estratégias
+                                                    planejamento</p>
+                                                <div class="wrap-btn style2">
+                                                    <a href="#" class="tf-button-st2 btn-effect" data-toggle="modal"
+                                                        data-target="#popup_bid"><span class="effect">connect
+                                                            wallet</span></a>
+                                                    <a href="https://www.youtube.com/watch?v=i7EMACWuErA"
+                                                        class="tf-button btn-effect popup-youtube">
+                                                        <span class="boder-fade"></span>
+                                                        <span class="effect">watch video</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-next-main"><i class="far fa-angle-right"></i></div>
+                <div class="btn-prev-main"><i class="far fa-angle-left"></i></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="tf-section tf-about pb-mobie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="content-about mobie-40" data-aos="fade-up" data-aos-duration="800">
+                            <div class="tf-title st2">
+                                <p class="h8 sub-title">COMO PODEMOS AJUDAR O SEU NEGÓCIO</p>
+                                <h4 class="title">Criamos soluções inteligentes para você</h4>
+                            </div>
+                            <p>Nós acreditamos no resultado do seu negócio. Somos a comunicação que a sua empresa
+                                precisa. Estamos on-line e offline. Somamos experiências por meio dos nossos clientes. A
+                                comunicação e a tecnologia são aliadas na nossa rotina de trabalho..</p>
+                            <h5 class="title">ESTAMOS PRESENTES EM TODO O BRASIL E NO MUNDO!</h5>
+                            <a class="tf-button st2 btn-effect" href="item.html">
+                                <span class="boder-fade"></span>
+                                <span class="effect">Aumente suas vendas já!</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="wrap-about p-l70" data-aos="fade-up" data-aos-duration="800">
+                            <div class="box-text corner-box active">
+                                <div class="h7">REDES SOCIAIS</div>
+                                <p>As redes sociais são uma ótima maneira de construir relacionamentos com seu
+                                    público-alvo, engajar seus seguidores
+                                    e promover sua marca. </p>
+                            </div>
+                            <div class="box-text corner-box">
+                                <div class="h7">CRIACAO DE SITES</div>
+                                <p>um site bem desenvolvido pode proporcionar uma boa experiência ao usuário, aumentar a
+                                    visibilidade da sua empresa e ajudar a
+                                    construir credibilidade no mercado.
+                                </p>
+                            </div>
+                            <div class="box-text corner-box ">
+                                <div class="h7">TRAFEGO PAGO</div>
+                                <p>com os anúncios pagos, é possível alcançar um público-alvo específico e direcionar
+                                    seu investimento para as pessoas que têm mais chance de se interessar por seus
+                                    produtos ou serviços.</p>
+                            </div>
+                            <div class="box-text corner-box">
+                                <div class="h7">DESIGN GRAFICO</div>
+                                <p>Um design atraente e profissional pode
+                                    destacar sua empresa da concorrência e
+                                    transmitir uma mensagem clara e coerente.</p>
+                            </div>
+                            <div class="box-text corner-box mb-0">
+                                <div class="h7">SUPORTE AO CLIENTE</div>
+                                <p>A conexão direta com nossos clientes é essencial para entender suas necessidades e
+                                    seu mercado. Estamos sempre disponíveis para manter um contato constante e
+                                    ajudá-lo(a) da melhor forma possível.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--
+    <section class="tf-section tf-project pb-mobie">
+        <div class="container-fluid">
+            <div class="swiper-container swiper mySwiper swiper-h">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper mySwiper1 swiper-v">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img1.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Taiyo Robotics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img2.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Pesky Penguins</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img3.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Aurory</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img4.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Taiyo Robotics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img5.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Portals</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img6.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Grim Syndicate</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img7.jpg" alt="">
+                                        <div class="content">
+                                           <a href="item.html">Jelly Beasts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img1.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Jungle Cats</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container swiper mySwiper swiper-h">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="swiper mySwiper2 swiper-v">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img7.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Taiyo Robotics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img6.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Jungle Cats</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img5.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Jelly Beasts</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img4.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html"> Grim Syndicate</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img3.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Portals</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img2.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Taiyo Robotics</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img1.jpg" alt="">
+                                        <div class="content">
+                                           <a href="item.html">Pesky Penguins</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="assets/images/common/img5.jpg" alt="">
+                                        <div class="content">
+                                         <a href="item.html">Aurory</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+        <section class="tf-section tf-roadmap style2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="tf-title m-b30" data-aos="fade-up" data-aos-duration="800">
+                            <p class="h8 sub-title">Siga nosso mapa arrastando para o lado</p>
+                            <h4 class="title">MAPA DO SUCESSO</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="roadmap style2" data-aos="fade-up" data-aos-duration="800">
+                            <div class="swiper-container swiper sl-roadmap">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="rm-box">
+                                                <div class="corner-box">
+                                                    <h5>Identificação das necessidades do cliente</h5>
+                                                    <ul>
+                                                        <li>Compreensão das necessidades do cliente antes de oferecer
+                                                            serviços</li>
+                                                        <li>Entrevista ou reunião inicial para identificar as
+                                                            necessidades do cliente</li>
+                                                        <li>Identificação dos objetivos e público-alvo do cliente</li>
+                                                        <li>Personalização dos serviços para atender às necessidades
+                                                            específicas do cliente</li>
+                                                        <li>Garantia da satisfação do cliente ao oferecer serviços com
+                                                            base em suas necessidades específicas.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box active">
+                                            <div class="rm-box">
+                                                <div class="corner-box active">
+                                                    <h5>Planejamento estratégico</h5>
+                                                    <ul>
+                                                        <li>Importância de um plano estratégico para o sucesso da marca
+                                                        </li>
+                                                        <li>Componentes essenciais de um plano estratégico eficaz
+                                                            (design gráfico, tráfego pago, redes sociais, criação de
+                                                            sites)</li>
+                                                        <li>Como desenvolver uma identidade visual forte para a marca
+                                                        </li>
+                                                        <li>Como utilizar campanhas de publicidade no Google Ads e
+                                                            Facebook Ads para aumentar a visibilidade da marca</li>
+                                                        <li>Estratégias para criar conteúdo eficaz para redes sociais e
+                                                            desenvolver um site responsivo e funcional.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box style">
+                                            <div class="rm-box">
+                                                <div class="corner-box">
+                                                    <h5>Implementação das ações</h5>
+                                                    <ul>
+                                                        <li>Implementação eficaz do plano estratégico</li>
+                                                        <li>Início da implementação após aprovação do plano</li>
+                                                        <li>Design gráfico, publicidade e conteúdo como elementos
+                                                            importantes na implementação</li>
+                                                        <li>Construção de um site funcional e atrativo</li>
+                                                        <li>Monitoramento, adaptação e mensuração dos resultados durante
+                                                            a implementação do plano.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box style">
+                                            <div class="rm-box">
+                                                <div class="corner-box">
+                                                    <h5>Monitoramento e otimização</h5>
+                                                    <ul>
+                                                        <li>Monitoramento contínuo do desempenho é essencial</li>
+                                                        <li>Métricas-chave a serem avaliadas (acessos ao site,
+                                                            engajamento nas redes sociais, taxa de conversão de
+                                                            publicidade)</li>
+                                                        <li>Utilização dos dados coletados para melhorar o desempenho
+                                                            das ações</li>
+                                                        <li>Estratégias para ajustes com base nos resultados da análise
+                                                            de dados.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="icon"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="box">
+                                            <div class="rm-box">
+                                                <div class="corner-box">
+                                                    <h5>Relatório de resultados</h5>
+                                                    <ul>
+                                                        <li>A importância de um relatório de resultados ao final do
+                                                            projeto</li>
+                                                        <li>O que deve ser incluído no relatório de resultados</li>
+                                                        <li>Indicadores de desempenho importantes a serem apresentados
+                                                            no relatório</li>
+                                                        <li>Como as melhorias realizadas ao longo do processo podem ser
+                                                            destacadas no relatório de resultados</li>
+                                                        <li>Como apresentar o relatório de resultados de forma clara e
+                                                            concisa.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-title altura p404">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumbs center" data-aos="fade-up" data-aos-duration="800">
+                            <h1 class="pulsate" style="font-size: 140px;">QUERO CRECER MAIS!</h1>
+                            <h2>Seu sucesso é nossa missão</h2>
+                            <p>Aperte no botão a baixo e comece sua jornada.</p>
+                            <a class="tf-button btn-effect" href="index.html">
+                                <span class="boder-fade"></span>
+                                <span class="effect">Aumente suas vendas já!</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <footer id="footer">
+            <div class="footer-main">
+                <img src="assets/images/backgroup/bg-ft.png" alt="" class="bg1">
+                <img src="assets/images/backgroup/bg-ft2.png" alt="" class="bg2">
+                <div class="container">
+                    <ul class="widget-social">
+                        <li>
+                            <a href="#">
+                                <img width="30px" src="assets/images/instagram-svgrepo-com.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M1.80176 15.0759C1.80315 21.0155 6.09584 26.0728 11.9262 27.0037V18.5652H8.88176V15.0759H11.9298V12.4196C11.7935 11.161 12.2208 9.90656 13.0957 8.9966C13.9707 8.08664 15.2026 7.61545 16.4574 7.71081C17.358 7.72545 18.2564 7.80616 19.1454 7.95229V10.9213H17.6286C17.1064 10.8524 16.5814 11.026 16.2015 11.3929C15.8216 11.7599 15.6279 12.2806 15.675 12.8084V15.0759H19.0002L18.4686 18.5664H15.675V27.0037C21.9803 26.001 26.4019 20.207 25.7364 13.8191C25.0709 7.43115 19.5513 2.68558 13.1763 3.02033C6.80139 3.35508 1.80277 8.65295 1.80176 15.0759Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img width="50px" src="assets/images/whatsapp-svgrepo-com.svg" alt="">
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.971 0.799805H4.02818C2.13767 0.799805 0.599609 2.33786 0.599609 4.22838V26.1712C0.599609 28.0617 2.13767 29.5998 4.02818 29.5998H25.971C27.8616 29.5998 29.3996 28.0617 29.3996 26.1712V4.22838C29.3996 2.33786 27.8616 0.799805 25.971 0.799805ZM23.2323 13.3641C23.0766 13.3785 22.9189 13.3881 22.7592 13.3881C20.9605 13.3881 19.38 12.4631 18.4604 11.0649C18.4604 14.7328 18.4604 18.9061 18.4604 18.976C18.4604 22.2051 15.8424 24.8231 12.6133 24.8231C9.38429 24.8231 6.76624 22.2051 6.76624 18.976C6.76624 15.747 9.38429 13.1289 12.6133 13.1289C12.7354 13.1289 12.8547 13.1399 12.9747 13.1475V16.0288C12.8547 16.0144 12.7368 15.9925 12.6133 15.9925C10.9649 15.9925 9.62909 17.3283 9.62909 18.9767C9.62909 20.6252 10.9649 21.9609 12.6133 21.9609C14.2618 21.9609 15.7176 20.6622 15.7176 19.0137C15.7176 18.9486 15.7464 5.57786 15.7464 5.57786H18.5002C18.7594 8.04026 20.7473 9.98358 23.2323 10.1619V13.3641Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <h5 class="heading">Eai, Pronto Para Tomar Um Café E Iniciar?</h5>
+                    <p>Deixe seu email a baixo que podemos lhe retornar também. </p>
+                    <form action="#" id="subscribe-form">
+                        <input type="email" placeholder="Deixe seu email aqui" required="" id="subscribe-email">
+                        <button class="tf-button-st2 btn-effect" type="submit" id="subscribe-button"> <span
+                                class="effect">Enviar</span></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="wrap-fx" style="justify-content: center;">
+                        <div class="Copyright">
+                            <p>Thriv3 2023- Todos os direitos reservados</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+        <div class="modal fade popup" id="popup_bid" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="header-popup">
+                        <h5>Connect to a wallet</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <a id="scroll-top"></a>
+    <script src="app/js/jquery.min.js"></script>
+    <script src="app/js/bootstrap.min.js"></script>
+    <script src="app/js/swiper-bundle.min.js"></script>
+    <script src="app/js/swiper.js"></script>
+    <script src="app/js/app.js"></script>
+    <script src="app/js/jquery.easing.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app/js/parallax.js"></script>
+    <script src="app/js/jquery.magnific-popup.min.js"></script>
+</body>
+
+</html>

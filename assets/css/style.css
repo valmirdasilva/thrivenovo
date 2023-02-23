@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'cybox';
+    src: url('../../assets/font/Cocon-Regular-Font.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    margin-right: 0 !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'cybox';
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'cybox';
+    font-weight: 700;
+    color: $white;
+}
+
+p {
+    font-family: 'cybox';
+    font-weight: 100;
+}
+
+
+.altura {
+    height: 480px !important;
+}
+
+.page-title.p404 {
+    padding: 100px 0 239px;
+}
+
+.main .page-title .slider-st1 .overlay {
+
+    background: url(../../assets/images/backgroup/1.jpg) center center no-repeat !important;
+    background-size: cover !important;
+
+}
+
+.roadmap .box .rm-box ul li {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For mobile phones: */
+    .oculta-mob {
+        display: none;
+    }
+
+    .header #site-header-inner {
+        justify-content: center;
+    }
+    .page-title.p404 h1 {
+        font-size: 54px !important;
+    }
+    .page-title.p404 h2 {
+        font-size: 22px;
+    }
+}
