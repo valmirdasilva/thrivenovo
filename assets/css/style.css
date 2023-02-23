@@ -28,14 +28,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.h7 {
     font-family: 'cybox';
     font-weight: 700;
     color: $white;
 }
 
 p {
-    font-family: 'cybox';
+    font-family: sans-serif;
     font-weight: 100;
 }
 
@@ -58,7 +59,15 @@ p {
 .roadmap .box .rm-box ul li {
     font-size: 12px;
 }
+.main .page-title .box-slider .image {
+    width: 52%;
+}    
 
+
+.main .page-title .box-slider .image img {
+    background-size: cover;
+    width: 100%;
+}
 @media only screen and (max-width: 768px) {
 
     /* For mobile phones: */
