@@ -84,9 +84,9 @@ p {
 	background-image   : url('./../../assets/images/logo/preload.gif');
 
 }
-.main .page-title .box-slider .image img {
-    position: relative !important;
-    top: 155px !important;
+
+.main .page-title {
+    height: 800px;
 }
 .pulse-button {
     cursor: pointer;
@@ -130,5 +130,8 @@ p {
     }
     .page-title.p404 h2 {
         font-size: 22px;
+    }
+    .main .page-title {
+        height: 624px;
     }
 }
